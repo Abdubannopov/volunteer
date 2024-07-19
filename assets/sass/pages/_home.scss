@@ -1,0 +1,351 @@
+.layout-wrapper{
+    background: var(--bg, #FAFDFF);
+}
+// ===== CARDS =====
+.cards{
+    margin-bottom: 100px;
+    .card{
+        &-item{
+            border-radius: 12px;
+            background: var(--white, #FFF);
+            box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 276px;
+            flex-shrink: 0;
+            padding: 32px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            &-title{
+                color: #1C1C1C;
+            }
+            &-text{
+                font-size: 32px;
+                line-height: 32px;
+                font-weight: 600;
+                color: #1C1C1C;
+            }
+        }
+    }
+}
+// ===== VOLONTYORS ======
+.volontyor{
+    padding: 16px 0 16px 16px;
+    border-radius: 12px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 100px;
+    &-img{
+        border-radius: 12px;
+        border: 1px solid var(--grey, #F3F3F3);
+        background: url(<path-to-image>), lightgray 0px -6.138px / 100% 120.12% no-repeat;
+        }
+    &-wrapper{
+        h2{
+            font-size:24px;
+            line-height: 40px;
+            font-weight: 600;
+        }
+        a{
+            background-color: #6495ED;
+            font-weight: 600;
+        }
+
+    }
+    &-text{
+        padding-right: 48px;
+        &-one{
+            margin-bottom: 13.5px;
+        }
+        &-two{
+            margin-bottom: 24px;
+        }
+    }
+    &-divider{
+        width: 580px;
+        height: 1px;
+        background: #EAEAEA;
+        margin-bottom: 16.5px;
+    }
+}
+
+// ========= NEWS =========
+
+.news{
+    margin-bottom: 100px;
+    &__topbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        &__title{
+            color: #000;
+            font-family: Nunito;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 100% */
+        }
+        &__link{
+            span{
+                color: var(--blue, #6495ED);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 26px; /* 130% */
+            }
+            &__img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    &-cards{
+        column-gap: 33px;
+        &-item{
+            border-radius: 14px;
+            background: #fff;
+            box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.05);
+            padding: 8px;
+            &-wrapper{
+                position: relative;
+                margin-bottom: 10px;
+                &-box{
+                    position: absolute;
+                    background-color: #fff;
+                    padding: 8px 16px;
+                    bottom: 4px;
+                    right:4px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 10px;
+                    gap: 8px;
+                    &-date{
+                        color: var(--blue, #6495ED);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 16px; /* 114.286% */
+                    }
+                }
+            }
+            &-title{
+                color: #2F2E2E;
+            }
+            &-text{
+                font-size:  1rem;
+                line-height: 1.4;
+                font-weight: 700;
+                color: var(--black, #2F2E2E);
+                padding-left: 4px;
+                padding-right: 6px;
+                padding-bottom: 8px;
+            }
+        }
+    }
+}
+
+// ======== OFFER ==========
+.offer{
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+    margin-bottom: 100px;
+    &-card{
+        width: 100%;
+        padding: 32px 52px 32px 32px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        column-gap: 88px;
+        border-radius: 12px;
+        background: var(--white, #FFF);
+        box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.05);
+        &-text{
+            color: var(--2, #2F508C);
+            font-family: Nunito;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 100% */
+        }
+    }
+}
+
+
+// ======= TASHKILOT =========
+
+.tashkilot{
+    width: 100%;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    background-color: #FFFFFF;
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-cart{
+        width: 100%;
+        max-width: 584px;
+    }
+    &-title{
+        color: #000;
+        font-family: Nunito;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 125% */
+        margin-bottom: 16px;
+        
+    }
+    &-text{
+        color: #000;
+        font-family: Nunito;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px; /* 160% */
+    }
+    &-left-img{
+        width: 584px;
+        height: 534px;
+        border-radius: 12px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat, url(<path-to-image>), lightgray 50% / cover no-repeat;
+    }
+    &-right-img{
+        width: 584px;
+        height: 400px;
+        margin-bottom: 24px;
+        border-radius: 12px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    }
+}
+
+// ======== credit ========
+.credits{
+    padding-top: 100px;
+    padding-bottom: 110px;
+    &-amount{
+        background: #fff;
+        padding: 4px;
+        &-btn{
+            color: var(--2, #2F508C);
+            text-align: center;
+            font-family: Nunito;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; 
+            border-radius: 11px;
+            border: 1px solid var(--1, #6495ED);
+            background: #FFF;
+            &:hover{
+                background: #6495ED;
+                color:white;
+            }
+            &:active{
+                opacity: .8;
+            }
+        }
+    }
+}
+
+// ======== CONTACT  =======
+
+.contact{
+    padding-top: 100px;
+    margin-bottom: 120px;
+    &-title{
+        color: #000;
+        font-family: Nunito;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 100% */
+        margin-bottom: 32px;
+    }
+    &-cards{
+        &-socials{
+            width: 100%;
+            max-width: 378px;
+            border-radius: 12px;
+            border: 1px solid var(--border_color, #EAEAEA);
+            background: var(--white, #FFF);
+        }
+        &-form{
+            &-text{
+                color: #000;
+                font-family: Nunito;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px; /* 133.333% */
+            }
+            &-input{
+                width:358px;
+                padding: 8px 16px;
+                border-radius: 4px;
+                border: 1px solid var(--gray-200, #E2E8F0);
+                background: var(--white, #FFF);
+                color: #A0AEC0;
+            }
+            &-social{
+                gap: 38px;
+                display: flex;
+                li{
+                    a{
+                            &:hover{
+                            .social-icons1{
+                                transform: scale(1.2);
+                                path{
+                                    fill:rgb(11, 255, 251);
+                                }
+                            }
+                            .social-icons2{
+                                transform: scale(1.2);
+                                path{
+                                    fill:rgb(250, 117, 137);
+                                }
+                            }
+                            .social-icons3{
+                                transform: scale(1.2);
+                                path{
+                                    fill:rgb(4, 126, 36);
+                                }
+                            }
+                            .social-icons4{
+                                transform: scale(1.2);
+                                path{
+                                    fill:red;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            &-btn{
+                border-radius: 6px;
+                background: var(--blue-500, #3182CE);
+                box-shadow: 0px 0px 10px 0px rgba(241, 234, 234, 0.50);
+                color: #FFF;
+                /* text-lg/lineHeight-7/font-semibold */
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px; /* 155.556% */
+                padding: 8px;
+            }
+        }
+    }
+    &-textarea{
+        padding:16px;
+        border-radius: 6px;
+        border: 1px solid var(--gray-200, #E2E8F0);
+        background: var(--white, #FFF);
+        font-size: 18px;
+        color:#A0AEC0;
+    }
+}
